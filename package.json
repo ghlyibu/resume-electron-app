@@ -1,0 +1,14 @@
+{
+  "name": "resume-electron-app",
+  "version": "0.0.1",
+  "author": "郭海林",
+  "description": "基于electron实现的简历平台桌面应用。",
+  "main": "./app/main/electron.js",
+  "scripts": {
+    "start:main": "electron ./app/main/electron.js",
+    "install:electron": "npm install electron --ELECTRON_MIRROR=https://cdn.npmmirror.com/binaries/electron/"
+  },
+  "dependencies": {
+    "electron": "^11.5.0"
+  }
+}
