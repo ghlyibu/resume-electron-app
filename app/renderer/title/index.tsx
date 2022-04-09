@@ -13,7 +13,7 @@ interface Iprops {
 
 function Title({ text, styles }: Iprops) {
   return (
-    <div style={styles} className="title">
+    <div style={styles} styleName="title">
       {text}
     </div>
   );

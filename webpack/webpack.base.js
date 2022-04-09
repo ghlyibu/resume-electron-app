@@ -6,7 +6,9 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
     alias: {
+      '@assets': path.join(__dirname, '../', 'assets/'),
       '@src': path.join(__dirname, '../', 'app/renderer'),
+      '@common': path.join(__dirname, '../', 'app/renderer/common'),
     },
   },
   module: {
@@ -25,6 +27,16 @@ module.exports = {
           options: {
             name: '[name]_[hash].[ext]',
             outputPath: 'images/',
+          },
+        },
+      },
+      {
+        test: /\.svg$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name]_[hash].[ext]',
+            outputPath: 'icons/',
           },
         },
       },

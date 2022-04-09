@@ -1,7 +1,25 @@
 // global.d.ts
 declare module '*.jpg' {
-  const jpg: string;
-  export default jpg;
+  const value: string;
+  export default value;
+}
+declare module '*.png' {
+  const value: string;
+  export default value;
+}
+
+declare module '*.json' {
+  const value: string;
+  export default value;
+}
+declare module '*.jpeg' {
+  const value: string;
+  export default value;
+}
+
+declare module '*.svg' {
+  const value: any;
+  export default value;
 }
 
 declare module '*.less' {
